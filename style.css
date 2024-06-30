@@ -34,16 +34,16 @@ html,body{
         width: 96.8px;
         font-size: 40px;
     }
-    #zero, #result{
+    .zero, .result{
         width: 197.7px;
     }
-    #one,#two,#three,#four,#five,#six,#seven,#eight,#nine,#zero{
+    .one,.two,.three,.four,.five,.six,.seven,.eight,.nine,.zero{
         background-color: rgb(22, 110, 84);
     }
-    #result,#add,#minus,#multiply,#divide{
+    .result,.add,.minus,.multiply,.divide{
         background-color: orange;
     }
-    #clear,#sign,#percent{
+    .clear,.sign,.percent{
         background-color: rgb(25, 116, 162);
     }
 }
