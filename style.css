@@ -1,0 +1,52 @@
+html,body{
+    height: 100%;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-shrink: 0;
+}
+
+
+.calculator{
+    border: 10px solid rgb(47, 45, 45);
+    border-radius: 10px;
+    background-color: black;
+    display: flex;
+    flex-direction: column;
+    height: 600px;
+    width: 400px;
+    flex-wrap: wrap;
+}
+
+#output{
+    display: flex;
+    height: 80px;
+    background-color: rgb(182, 180, 180);
+    font-size: 40px;
+    align-items: center;
+    justify-content: right;
+}
+
+.buttons{
+    button{
+        height: 104px;
+        width: 96.8px;
+        font-size: 40px;
+    }
+    #zero, #result{
+        width: 197.7px;
+    }
+    #one,#two,#three,#four,#five,#six,#seven,#eight,#nine,#zero{
+        background-color: rgb(22, 110, 84);
+    }
+    #result,#add,#minus,#multiply,#divide{
+        background-color: orange;
+    }
+    #clear,#sign,#percent{
+        background-color: rgb(25, 116, 162);
+    }
+}
+
+
+
