@@ -39,103 +39,13 @@ function working(){
 
     buttons.forEach(button => {
         button.addEventListener("click", ()=>{
-            if(button.classList.contains("zero")){
+            if(button.classList.contains("number")){
                 if(!operandClick){
-                    num1 = num1 * 10 + 0;
+                    num1 = (num1 * 10) + Number(button.textContent);
                     output.textContent = num1;
                 }
                 else{
-                    num2 = num2 * 10 + 0;
-                    output.textContent = num2;
-                }
-            }
-            if(button.classList.contains("one")){
-                if(!operandClick){
-                    num1 = num1 * 10 + 1;
-                    output.textContent = num1;
-                }
-                else{
-                    num2 = num2 * 10 + 1;
-                    output.textContent = num2;
-                }
-            }
-            if(button.classList.contains("two")){
-                if(!operandClick){
-                    num1 = num1 * 10 + 2;
-                    output.textContent = num1;
-                }
-                else{
-                    num2 = num2 * 10 + 2;
-                    output.textContent = num2;
-                }
-            }
-            if(button.classList.contains("three")){
-                if(!operandClick){
-                    num1 = num1 * 10 + 3;
-                    output.textContent = num1;
-                }
-                else{
-                    num2 = num2 * 10 + 3;
-                    output.textContent = num2;
-                }
-            }
-            if(button.classList.contains("four")){
-                if(!operandClick){
-                    num1 = num1 * 10 + 4;
-                    output.textContent = num1;
-                }
-                else{
-                    num2 = num2 * 10 + 4;
-                    output.textContent = num2;
-                }
-            }
-            if(button.classList.contains("five")){
-                if(!operandClick){
-                    num1 = num1 * 10 + 5;
-                    output.textContent = num1;
-                }
-                else{
-                    num2 = num2 * 10 + 5;
-                    output.textContent = num2;
-                }
-            }
-            if(button.classList.contains("six")){
-                if(!operandClick){
-                    num1 = num1 * 10 + 6;
-                    output.textContent = num1;
-                }
-                else{
-                    num2 = num2 * 10 + 6;
-                    output.textContent = num2;
-                }
-            }
-            if(button.classList.contains("seven")){
-                if(!operandClick){
-                    num1 = num1 * 10 + 7;
-                    output.textContent = num1;
-                }
-                else{
-                    num2 = num2 * 10 + 7;
-                    output.textContent = num2;
-                }
-            }
-            if(button.classList.contains("eight")){
-                if(!operandClick){
-                    num1 = num1 * 10 + 8;
-                    output.textContent = num1;
-                }
-                else{
-                    num2 = num2 * 10 + 8;
-                    output.textContent = num2;
-                }
-            }
-            if(button.classList.contains("nine")){
-                if(!operandClick){
-                    num1 = num1 * 10 + 9;
-                    output.textContent = num1;
-                }
-                else{
-                    num2 = num2 * 10 + 9;
+                    num2 = (num2 * 10) + Number(button.textContent);
                     output.textContent = num2;
                 }
             }
